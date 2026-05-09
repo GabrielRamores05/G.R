@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Gabriel B. Ramores – Full Stack Web Developer & UI/UX Designer. Building scalable MERN applications and conversion-focused systems.">
+  <meta name="author" content="Gabriel B. Ramores">
+  <title>G.R. | Full Stack Web Developer</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Remixicon -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/CSS/style.css">
+</head>
+<body>
+
+  <!-- ====== PRELOADER ====== -->
+  <div class="preloader" id="preloader">
+    <span class="preloader-text">G.R.</span>
+    <div class="preloader-bar"><div class="preloader-fill"></div></div>
+  </div>
+
+  <!-- Custom Interactive Cursor -->
+  <div class="cursor-dot" id="cursor-dot"></div>
+  <div class="cursor-outline" id="cursor-outline"></div>
+
+  <div class="newspaper-wrapper">
+    <div class="newspaper-frame">
+      <!-- ====== HEADER ====== -->
+      <header class="header" id="header" style="position: sticky; top: 0; border-top: none; width: 100%; border-bottom: 2px solid var(--text-strong); background: var(--bg); z-index: 2000;">
+        <nav class="nav">
+          <a href="#landing" class="nav-logo">G.R.</a>
+          <div class="nav-menu" id="nav-menu">
+            <ul class="nav-list">
+              <li><a href="#landing" class="nav-link active-link">Home</a></li>
+              <li><a href="#services" class="nav-link">Services</a></li>
+              <li><a href="#projects" class="nav-link">Work</a></li>
+              <li><a href="#tools" class="nav-link">Tools</a></li>
+              <li><a href="#faq" class="nav-link">FAQs</a></li>
+            </ul>
+            <i class="ri-close-line nav-close" id="nav-close"></i>
+          </div>
+          <div class="nav-actions">
+            <div class="hue-picker-container">
+              <input type="range" min="0" max="360" value="0" class="hue-slider" id="hue-slider">
+            </div>
+            <i class="ri-moon-line nav-theme" id="theme-button"></i>
+            <a href="#contact" class="nav-cta">Let's Talk</a>
+            <div class="nav-toggle" id="nav-toggle-btn">
+              <i class="ri-menu-line"></i>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <!-- ====== MAIN ====== -->
+      <main class="main">
+
+    <!-- ====== THE DAILY BROADSHEET ====== -->
+    <section class="broadsheet section" id="landing">
+      <div class="container-12">
+        
+        <!-- The Masthead (12 Cols) -->
+        <header class="masthead span-12">
+          <div class="masthead-top">
+            <span class="vol">VOL. I ... NO. 01</span>
+            <span class="loc">NAGA CITY, PHILIPPINES</span>
+            <span id="current-date">SATURDAY, OCTOBER 14</span>
+          </div>
+          <h1 class="masthead-title">The Digital Architect</h1>
+          <div class="masthead-bottom">
+            <span>LATEST EDITION</span>
+            <span class="stars-print">★★★★★</span>
+            <span>AVAILABLE WORLDWIDE</span>
+            <span class="stars-print">★★★★★</span>
+            <span>PRICE: ONE PROJECT</span>
+          </div>
+        </header>
+
+        <!-- The Front Page Grid (12 Cols) -->
+        <main class="front-page-grid span-12">
+          
+          <!-- Lead Story (Spans 7) -->
+          <article class="lead-story span-7">
+            <h2 class="headline-primary">Gabriel B. Ramores Engineers High-Conversion Systems for Global Founders.</h2>
+            <div class="byline">
+              <span class="author">By THE EDITOR</span> | <span class="date-read">5 MIN READ</span>
+            </div>
+            <div class="article-text-2col">
+              <p><span class="drop-cap">I</span>n an era where digital noise is deafening, founders require more than just a standard website—they demand scalable, robust architectures that actively convert visitors into revenue. Working from the Philippines, I have dedicated my practice to mastering the MERN stack and developing proprietary funnel systems that do exactly that.</p>
+              <p>By blending rigorous engineering with sophisticated editorial design principles, I ensure that every digital product shipped not only meets aesthetic standards but drives measurable, aggressive growth for my clients.</p>
+            </div>
+            <div class="quote-block">
+              "Founders don't need code. They need systems that build trust and generate revenue while they sleep."
+            </div>
+          </article>
+
+          <!-- Featured Image (Spans 3) -->
+          <aside class="feature-aside span-3">
+            <h3 class="section-label">EXHIBIT A: CORA LIVE</h3>
+            <div class="feature-image-wrapper">
+              <img src="./assets/images/cora_live.png" alt="CORA Live Site" class="editorial-img" style="aspect-ratio: 1/1.4; object-fit: cover; object-position: top;">
+            </div>
+            <p class="print-caption"><strong>FIG 1.</strong> — The official CORA landing page. A masterclass in SaaS conversion and automated branding.</p>
+            <div class="ad-box" style="margin-top: 1rem;">
+               <a href="#contact" class="btn-print" style="width: 100%; text-align: center;">INQUIRE NOW</a>
+            </div>
+          </aside>
+
+          <!-- The Classifieds (Spans 2) -->
+          <aside class="classifieds span-2">
+            <h3 class="section-label">NOTICE</h3>
+            <div class="ad-box">
+              <h4 class="ad-title">Accepting Inquiries</h4>
+              <p class="ad-text">Now scheduling for Q3 development cycles. Priority given to SaaS platforms.</p>
+              <ul class="ad-stats">
+                <li><strong>10+</strong> Shipped</li>
+                <li><strong>5.0</strong> Rating</li>
+                <li><strong>500%</strong> ROI</li>
+              </ul>
+              <a href="#contact" class="btn-print">Secure Spot</a>
+            </div>
+          </aside>
+
+          <!-- Below the Fold (Spans 12, Subgrid 3x4) -->
+          <div class="sub-stories span-12">
+            <div class="story span-4">
+              <h4 class="sub-headline">Full-Stack Precision</h4>
+              <p>Specializing in React, Node.js, and MongoDB to build architectures that never fail under pressure.</p>
+            </div>
+            <div class="story span-4">
+              <h4 class="sub-headline">Automated Funnels</h4>
+              <p>Integrating GoHighLevel and Zapier to create hands-free lead generation pipelines.</p>
+            </div>
+            <div class="story span-4">
+              <h4 class="sub-headline">Editorial UI/UX</h4>
+              <p>Rejecting generic templates in favor of bespoke, magazine-quality interfaces that demand attention.</p>
+            </div>
+                 <!-- Full-Width Archived Exhibits Reel -->
+        <div class="span-12" style="border-top: 4px solid var(--text-strong); padding-top: 2rem; margin-top: 2rem;">
+          <h3 class="section-label" style="text-align: center;">LATE BREAKING EXHIBITS</h3>
+          <div class="marquee" style="border-bottom: none; border-top: none; padding: 2rem 0;">
+            <div class="marquee-track" style="gap: 3rem; animation: scroll-left 40s linear infinite;">
+               <div class="project-card" style="width: 250px; flex-shrink: 0;"><img src="./assets/images/project_airline.webp" alt="Airline" class="editorial-img"></div>
+               <div class="project-card" style="width: 250px; flex-shrink: 0;"><img src="./assets/images/project_booking.webp" alt="Booking" class="editorial-img"></div>
+               <div class="project-card" style="width: 250px; flex-shrink: 0;"><img src="./assets/images/project_ecommerce.webp" alt="Ecom" class="editorial-img"></div>
+               <div class="project-card" style="width: 250px; flex-shrink: 0;"><img src="./assets/images/project_mern.webp" alt="MERN" class="editorial-img"></div>
+               <div class="project-card" style="width: 250px; flex-shrink: 0;"><img src="./assets/images/project_api.webp" alt="API" class="editorial-img"></div>
+               <!-- Duplication for loop -->
+               <div class="project-card" style="width: 250px; flex-shrink: 0;"><img src="./assets/images/project_airline.webp" alt="Airline" class="editorial-img"></div>
+               <div class="project-card" style="width: 250px; flex-shrink: 0;"><img src="./assets/images/project_booking.webp" alt="Booking" class="editorial-img"></div>
+               <div class="project-card" style="width: 250px; flex-shrink: 0;"><img src="./assets/images/project_ecommerce.webp" alt="Ecom" class="editorial-img"></div>
+               <div class="project-card" style="width: 250px; flex-shrink: 0;"><img src="./assets/images/project_mern.webp" alt="MERN" class="editorial-img"></div>
+               <div class="project-card" style="width: 250px; flex-shrink: 0;"><img src="./assets/images/project_api.webp" alt="API" class="editorial-img"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== SERVICES ====== -->
+    <section class="services section" id="services">
+      <div class="container-12">
+        <main class="front-page-grid span-12">
+          
+          <header class="masthead span-12" style="border-bottom: none; margin-bottom:0;">
+             <h2 class="masthead-title" style="font-size: clamp(2.5rem, 8vw, 6rem); text-align:left;">Capabilities</h2>
+             <div class="masthead-bottom" style="margin-bottom: 2rem;">
+               <span>PRACTICE AREAS</span>
+               <span>SYSTEM ENGINEERING</span>
+               <span>STRATEGY & DESIGN</span>
+             </div>
+          </header>
+
+          <article class="lead-story editorial-article span-8">
+            <h3 class="section-label">THE CORE OFFERINGS</h3>
+            <!-- Service 1 -->
+            <div class="service-card" style="border-top: 2px solid var(--text-strong);">
+              <div class="service-header" data-service-toggle>
+                <div class="service-num">01</div>
+                <div class="service-title-group">
+                  <h3 class="service-name">Full Stack Development</h3>
+                  <p class="service-desc">Engineering resilient web architectures using the MERN stack. I prioritize scalability, security, and peak performance for enterprise-grade growth.</p>
+                </div>
+                <i class="ri-arrow-down-s-line service-toggle-icon"></i>
+              </div>
+              <div class="service-body">
+                <div class="service-tags">
+                  <span class="service-tag">React.js</span>
+                  <span class="service-tag">Node.js</span>
+                  <span class="service-tag">Express</span>
+                  <span class="service-tag">MongoDB</span>
+                  <span class="service-tag">Next.js</span>
+                  <span class="service-tag">TypeScript</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="service-card">
+              <div class="service-header" data-service-toggle>
+                <div class="service-num">02</div>
+                <div class="service-title-group">
+                  <h3 class="service-name">UI/UX Product Design</h3>
+                  <p class="service-desc">High-fidelity interface design that translates complex business requirements into intuitive, conversion-focused user journeys.</p>
+                </div>
+                <i class="ri-arrow-down-s-line service-toggle-icon"></i>
+              </div>
+              <div class="service-body">
+                <div class="service-tags">
+                  <span class="service-tag">Figma</span>
+                  <span class="service-tag">Prototyping</span>
+                  <span class="service-tag">Design Systems</span>
+                  <span class="service-tag">Wireframing</span>
+                  <span class="service-tag">Visual Identity</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="service-card">
+              <div class="service-header" data-service-toggle>
+                <div class="service-num">03</div>
+                <div class="service-title-group">
+                  <h3 class="service-name">Conversion Architecture</h3>
+                  <p class="service-desc">Optimizing the entire customer lifecycle through automated funnels, sophisticated CRM integrations, and data-driven lead gen pipelines.</p>
+                </div>
+                <i class="ri-arrow-down-s-line service-toggle-icon"></i>
+              </div>
+              <div class="service-body">
+                <div class="service-tags">
+                  <span class="service-tag">GoHighLevel</span>
+                  <span class="service-tag">Zapier</span>
+                  <span class="service-tag">Automation</span>
+                  <span class="service-tag">Lead Scoping</span>
+                  <span class="service-tag">API Integrations</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="span-12" style="margin-top: 3rem;">
+               <h3 class="section-label">LATEST TECHNICAL BULLETINS</h3>
+               <div class="news-bulletin">
+                  <span class="news-bulletin-time">10:42 AM</span>
+                  <span class="news-bulletin-text">Successfully deployed a 12-column editorial grid for a high-traffic developer portfolio. System stability remains at 99.9%.</span>
+               </div>
+               <div class="news-bulletin">
+                  <span class="news-bulletin-time">09:15 AM</span>
+                  <span class="news-bulletin-text">New security protocols integrated into MERN stack boilerplate. Enhanced JWT encryption now active across all node instances.</span>
+               </div>
+               <div class="news-bulletin">
+                  <span class="news-bulletin-time">YESTERDAY</span>
+                  <span class="news-bulletin-text">UI/UX Design System "Ink & Paper" finalized. Focus shifts to modular component-based architecture for rapid prototyping.</span>
+               </div>
+            </div>
+          </article>
+
+          <aside class="editorial-aside span-4">
+             <h3 class="section-label">THE BLUEPRINT</h3>
+             <img src="./assets/images/services_blueprint.png" alt="System Blueprint" class="editorial-img">
+             
+             <h3 class="section-label" style="margin-top: 2.5rem;">METHODOLOGY</h3>
+             <div class="quote-block" style="margin-top:0; border-top: none; padding-top: 0; text-align: left;">
+                "Code is the tool; Growth is the objective."
+             </div>
+             <p style="font-size:0.95rem; line-height: 1.6; margin-top:1.5rem; text-align: justify;">Every digital product is architected with an extreme focus on automated lead generation and conversion. I don't build "websites"—I build revenue engines that function 24/7 with zero maintenance.</p>
+             
+             <div class="ad-box">
+                <h4>IMMEDIATE AVAILABILITY</h4>
+                <p>Now accepting high-stakes projects for Q3. Limited slots available for full-cycle development.</p>
+                <a href="#contact" class="btn-print" style="margin-top: 1rem; display: inline-block;">INQUIRE NOW</a>
+             </div>
+
+             <div class="span-12" style="margin-top: 2rem;">
+                <h3 class="section-label">CLASSIFIEDS</h3>
+                <ul class="classifieds-list">
+                  <li class="classified-item"><strong>LEGACY MODERNIZATION</strong> <span>AVAILABLE</span></li>
+                  <li class="classified-item"><strong>API ARCHITECTURE</strong> <span>IN-DEMAND</span></li>
+                  <li class="classified-item"><strong>UI/UX AUDITS</strong> <span>BOOKING NOW</span></li>
+                </ul>
+             </div>
+          </aside>
+
+          <!-- About/Values attached to Services Page -->
+          <div class="span-12" style="border-top: 4px solid var(--text-strong); padding-top: 4rem; margin-top: 4rem;">
+            <div class="front-page-grid">
+              <div class="span-6">
+                <h2 class="section-title" style="font-size: 3.5rem;">The Differentiator</h2>
+                <div class="editorial-img" style="max-width: 200px; margin-bottom: 1.5rem; float: right; margin-left: 2rem; border-radius: 0;">
+                   <img src="./assets/images/profile1.webp" alt="Gabriel Ramores" style="width: 100%; filter: grayscale(100%) contrast(1.2);">
+                   <p style="font-size: 0.65rem; text-align: center; margin-top: 0.5rem; font-weight: 800;">EDITOR-IN-CHIEF</p>
+                </div>
+                <p style="font-size: 1.1rem; line-height: 1.7; margin-top: 1.5rem; text-align: justify;">Most developers stop at the code. I start at the business goals. By understanding the core mechanics of your revenue model, I build technical solutions that solve real bottlenecks, not just visual ones.</p>
+              </div>
+              <div class="span-6">
+                <div class="values-grid" style="grid-template-columns: 1fr; gap: 1rem;">
+                  <div class="value-card">
+                    <h3>Speed & Precision</h3>
+                    <p>Deployed the entire CORA ecosystem in 48 hours. I work fast without cutting corners.</p>
+                  </div>
+                  <div class="value-card">
+                    <h3>Full-Stack Ownership</h3>
+                    <p>From Figma prototypes to production APIs — I handle the entire pipeline.</p>
+                  </div>
+                  <div class="value-card">
+                    <h3>Results Over Code</h3>
+                    <p>300+ qualified leads in one month. Systems that move metrics.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+         
+        </main>
+      </div>
+    </section>
+
+    <section class="projects section" id="projects">
+      <div class="container-12">
+        <main class="front-page-grid span-12">
+          <header class="masthead span-12" style="border-bottom: none; margin-bottom:0;">
+             <h2 class="masthead-title" style="font-size: clamp(2.5rem, 8vw, 6rem); text-align:left;">The Exhibits</h2>
+             <div class="masthead-bottom" style="margin-bottom: 2rem;">
+               <span>RECENT COMMISSIONS</span>
+               <span>SYSTEMS IN PRODUCTION</span>
+               <span>EDITORIAL REVIEW</span>
+             </div>
+          </header>
+          
+          <article class="editorial-article span-9">
+            <h3 class="section-label">FEATURED SPREAD: PROJECT CORA</h3>
+            <div class="project-img" style="height: auto; aspect-ratio: 16/9; overflow: hidden; border: 1px solid var(--text-strong);">
+              <img loading="lazy" src="./assets/images/cora_live.png" alt="CORA" class="editorial-img" style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
+            </div>
+            <div class="front-page-grid" style="margin-top: 2rem;">
+              <div class="span-8">
+                <h2 class="headline-primary">Building a Full-Cycle Lead Generation Engine in 48 Hours.</h2>
+                <p style="font-size: 1rem; line-height: 1.7; text-align: justify;">The CORA project demanded a rapid deployment of a conversion-focused landing page, integrated with a sophisticated backend lead-management system. By leveraging the MERN stack and modular CSS, I was able to ship a production-ready solution that immediately captured 300+ qualified leads in its first month of operation.</p>
+                <a href="#contact" class="btn-print" style="margin-top: 1.5rem; display: inline-block; padding: 0.8rem 2rem;">START COMMISSION</a>
+              </div>
+              <div class="span-4">
+                <div class="ad-box" style="margin-top: 0; padding: 1rem;">
+                  <h4>TECH SPECS</h4>
+                  <p style="text-align: left; margin-bottom: 0;">- React Frontend<br>- Node/Express API<br>- MongoDB Cloud<br>- Vercel Edge Runtime</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="span-12" style="border-top: 1px solid var(--text-strong); margin-top: 3rem; padding-top: 2rem;">
+              <div class="front-page-grid">
+                <div class="span-6">
+                  <h3 class="section-label">CRITIQUE: E-COMMERCE ENGINE</h3>
+                  <div class="editorial-img" style="aspect-ratio: 4/3;">
+                    <img loading="lazy" src="./assets/images/hero_project_api_1778329697241.png" alt="E-commerce API" style="width: 100%; height: 100%; object-fit: cover;">
+                  </div>
+                  <p style="font-size: 0.85rem; line-height: 1.5; text-align: justify;">A masterclass in RESTful API architecture. This backend engine handles complex inventory management and transaction logic with sub-100ms response times, proving that performance is the ultimate feature.</p>
+                </div>
+                <div class="span-6">
+                  <h3 class="section-label">CRITIQUE: COURSE BOOKING APP</h3>
+                  <div class="editorial-img" style="aspect-ratio: 4/3;">
+                    <img loading="lazy" src="./assets/images/hero_project_app_1778329883571.png" alt="Course Booking App" style="width: 100%; height: 100%; object-fit: cover;">
+                  </div>
+                  <p style="font-size: 0.85rem; line-height: 1.5; text-align: justify;">Merging utility with high-end UI design. This MERN stack application provides a seamless scheduling experience for both students and instructors, wrapped in a premium, clean interface.</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <aside class="editorial-aside span-3">
+            <h3 class="section-label">THE GALLERY</h3>
+            <div class="projects-carousel" style="border: none; padding: 0;">
+              <div class="projects-track" style="flex-direction: column; animation: none; gap: 1rem; width: 100%;">
+                <div class="project-card" style="flex: none; width: 100%;">
+                  <div class="project-img">
+                    <a href="https://cora-landing-page-liart.vercel.app/" target="_blank">
+                      <img src="./assets/images/cora_live.png" alt="Cora" class="editorial-img">
+                    </a>
+                  </div>
+                  <div class="project-info"><h3>CORA System</h3><span>SaaS Landing</span></div>
+                </div>
+                <div class="project-card" style="flex: none; width: 100%;">
+                  <div class="project-img"><img src="./assets/images/project_airline.webp" alt="Airline" class="editorial-img"></div>
+                  <div class="project-info"><h3>Airline Portal</h3><span>Reservation System</span></div>
+                </div>
+                <div class="project-card" style="flex: none; width: 100%;">
+                  <div class="project-img"><img src="./assets/images/project_booking.webp" alt="Booking" class="editorial-img"></div>
+                  <div class="project-info"><h3>Hospitality App</h3><span>Booking Engine</span></div>
+                </div>
+                <div class="project-card" style="flex: none; width: 100%;">
+                  <div class="project-img"><img src="./assets/images/project_ecommerce.webp" alt="Ecom" class="editorial-img"></div>
+                  <div class="project-info"><h3>Retail Stack</h3><span>Commerce Solution</span></div>
+                </div>
+                <div class="project-card" style="flex: none; width: 100%;">
+                  <div class="project-img"><img src="./assets/images/project_mern.webp" alt="MERN" class="editorial-img"></div>
+                  <div class="project-info"><h3>MERN Boilerplate</h3><span>Architecture</span></div>
+                </div>
+                <div class="project-card" style="flex: none; width: 100%;">
+                  <div class="project-img"><img src="./assets/images/project_api.webp" alt="API" class="editorial-img"></div>
+                  <div class="project-info"><h3>Legacy API</h3><span>Database Engine</span></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="ad-box">
+              <h4>VIEW THE REPOSITORY</h4>
+              <p>Explore the clean, documented source code for these exhibits on GitHub.</p>
+              <a href="#contact" class="btn-print" style="margin-top: 1rem; display: inline-block;">REQUEST ACCESS</a>
+            </div>
+
+            <div class="span-12" style="margin-top: 2rem;">
+               <h3 class="section-label">SYSTEM EVIDENCE</h3>
+               <img src="./assets/images/project_leads.webp" alt="Evidence" class="editorial-img" style="filter: grayscale(100%) contrast(1.5);">
+               <p style="font-size: 0.75rem; text-align: center; font-style: italic;">Captured lead metrics from Q4 production run.</p>
+            </div>
+          </aside>
+        
+          <!-- Testimonials attached to Projects Page -->
+          <div class="span-12" style="border-top: 4px solid var(--text-strong); padding-top: 4rem; margin-top: 4rem;">
+            <h2 class="section-title" style="margin-bottom: 2rem; font-size: clamp(2rem, 5vw, 3rem);">Reviews & Citations</h2>
+            
+            <div class="front-page-grid">
+              <!-- Column 1: Industry Reviews -->
+              <div class="span-8">
+                <h3 class="section-label">CRITICAL RECAP</h3>
+                <div class="column-2">
+                  <article class="testimonial-card" style="border-top: none; padding-top: 0;">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">"Gabriel's ability to architect a full-cycle lead generation system in just 48 hours was impressive. He doesn't just write code; he understands business logic."</p>
+                    <div class="testimonial-author">
+                      <img src="assets/images/user1.webp" alt="Alex Rivers" width="40" height="40" style="border-radius: 0; border: 1px solid var(--text-strong);">
+                      <div><strong>Alex Rivers</strong><span>Edgepoint Marketing</span></div>
+                    </div>
+                  </article>
+
+                  <article class="testimonial-card" style="border-top: none; padding-top: 0;">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">"The CORA automation system saved us hundreds of manual hours. His MERN stack expertise is solid, and his UI/UX sense is top-notch."</p>
+                    <div class="testimonial-author">
+                      <img src="assets/images/user2.webp" alt="Sarah Jenkins" width="40" height="40" style="border-radius: 0; border: 1px solid var(--text-strong);">
+                      <div><strong>Sarah Jenkins</strong><span>Founder, CORA Ops</span></div>
+                    </div>
+                  </article>
+
+                  <article class="testimonial-card">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">"A highly reliable developer who leverages AI to speed up development without sacrificing quality. Gabriel is my go-to for complex systems."</p>
+                    <div class="testimonial-author">
+                      <img src="assets/images/user3.webp" alt="Marcus Thorne" width="40" height="40" style="border-radius: 0; border: 1px solid var(--text-strong);">
+                      <div><strong>Marcus Thorne</strong><span>Tech Lead, Zuitt</span></div>
+                    </div>
+                  </article>
+
+                  <article class="testimonial-card">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">"The integration of editorial design with high-performance React code is something you don't see often. A truly unique approach to web engineering."</p>
+                    <div class="testimonial-author">
+                      <img src="assets/images/user1.webp" alt="Tech Reviewer" width="40" height="40" style="border-radius: 0; border: 1px solid var(--text-strong);">
+                      <div><strong>Jordan Lee</strong><span>Senior Architect, DevPulse</span></div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+
+              <!-- Column 2: Short Citations / Letters -->
+              <div class="span-4" style="padding-left: 2rem; border-left: 1px solid var(--text-strong);">
+                <h3 class="section-label">LETTERS OF RECOMMENDATION</h3>
+                <div class="quote-block" style="border: none; padding: 0; margin-top: 1rem;">
+                  <p style="font-size: 0.9rem; font-style: italic; line-height: 1.5; margin-bottom: 1.5rem;">"Gabriel didn't just build us a website; he built us a business strategy that happens to live on the web." <br><strong>— ELIZA B., CEO</strong></p>
+                  
+                  <p style="font-size: 0.9rem; font-style: italic; line-height: 1.5; margin-bottom: 1.5rem;">"The speed of execution was unheard of. We went from Figma to production in 3 days." <br><strong>— SAM R., PRODUCT OWNER</strong></p>
+                  
+                  <p style="font-size: 0.9rem; font-style: italic; line-height: 1.5;">"Finally, a developer who understands that design is as important as the backend logic." <br><strong>— DANIEL K., CREATIVE DIRECTOR</strong></p>
+                </div>
+
+                <div class="ad-box" style="margin-top: 3rem;">
+                  <h4>YOUR PROJECT HERE</h4>
+                  <p>Ready to be the next success story? Let's discuss your architectural needs.</p>
+                  <a href="#contact" class="btn-print" style="margin-top: 1rem; display: inline-block;">START COMMISSION</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </main>
+      </div>
+    </section>
+
+    <!-- ====== TOOLS ====== -->
+    <section class="tools section" id="tools">
+      <div class="container-12">
+        <main class="front-page-grid span-12">
+          
+          <header class="masthead span-12" style="border-bottom: none; margin-bottom:0;">
+             <h2 class="masthead-title" style="font-size: clamp(2.5rem, 8vw, 6rem); text-align:left;">Technical Inventory</h2>
+             <div class="masthead-bottom" style="margin-bottom: 2rem;">
+               <span>SYSTEM INFRASTRUCTURE</span>
+               <span>DESIGN TOOLING</span>
+               <span>AUTOMATION STACK</span>
+             </div>
+          </header>
+
+          <article class="span-9" style="border-top: 2px solid var(--text-strong); padding-top: 2rem; border-right: 1px solid var(--text-strong); padding-right: 2rem;">
+            <h3 class="section-label">THE MASTER SPEC SHEET</h3>
+            <div class="column-2">
+              <div class="tool-group" style="margin-bottom: 1.5rem;">
+                <h3 class="tool-group-title">MERN Ecosystem</h3>
+                <div class="tool-items">
+                  <div class="tool-chip">MongoDB</div>
+                  <div class="tool-chip">Express.js</div>
+                  <div class="tool-chip">React.js</div>
+                  <div class="tool-chip">Node.js</div>
+                  <div class="tool-chip">Redux</div>
+                  <div class="tool-chip">Mongoose</div>
+                </div>
+              </div>
+              <div class="tool-group" style="margin-bottom: 1.5rem;">
+                <h3 class="tool-group-title">Interface Design</h3>
+                <div class="tool-items">
+                  <div class="tool-chip">Figma</div>
+                  <div class="tool-chip">Adobe CC</div>
+                  <div class="tool-chip">Framer</div>
+                  <div class="tool-chip">Responsive Web</div>
+                  <div class="tool-chip">Typography</div>
+                </div>
+              </div>
+              <div class="tool-group" style="margin-bottom: 1.5rem;">
+                <h3 class="tool-group-title">Funnel Systems</h3>
+                <div class="tool-items">
+                  <div class="tool-chip">GoHighLevel</div>
+                  <div class="tool-chip">Zapier</div>
+                  <div class="tool-chip">Make.com</div>
+                  <div class="tool-chip">CRM Mapping</div>
+                </div>
+              </div>
+              <div class="tool-group">
+                <h3 class="tool-group-title">DevOps & Cloud</h3>
+                <div class="tool-items">
+                  <div class="tool-chip">Vercel</div>
+                  <div class="tool-chip">AWS S3</div>
+                  <div class="tool-chip">Docker</div>
+                  <div class="tool-chip">Git/GitHub</div>
+                  <div class="tool-chip">Postman</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="span-12" style="border-top: 1px solid var(--text-strong); margin-top: 3rem; padding-top: 2rem;">
+              <h3 class="section-label">THE EVOLUTION OF THE STACK</h3>
+              <p style="font-size: 0.95rem; line-height: 1.6; text-align: justify; column-count: 2; column-gap: 2rem;">The tools I select are chosen for one reason: efficiency. By mastering the MERN stack alongside modern AI-assisted development tools, I can compress months of traditional development into weeks. My workflow is built around the "Ink & Paper" design system, ensuring that every project starts with a robust, modular foundation that can scale from a simple MVP to a global enterprise platform without technical debt.</p>
+            </div>
+          </article>
+
+          <aside class="span-3" style="padding-left: 2rem;">
+            <h3 class="section-label">SYSTEM UPTIME</h3>
+            <div class="ad-box" style="margin-top: 0; text-align: left;">
+              <div style="font-size: 2rem; font-weight: 900; color: var(--accent);">99.9%</div>
+              <p style="font-weight: 700; text-transform: uppercase; margin-bottom: 0.5rem;">Deployment Stability</p>
+              <p style="font-size: 0.75rem;">Across all production instances for Q1-Q2.</p>
+            </div>
+
+            <div class="span-12" style="margin-top: 2rem;">
+              <h3 class="section-label">EXPERT RATINGS</h3>
+              <ul class="classifieds-list">
+                <li class="classified-item"><strong>BACKEND LOGIC</strong> <span>9/10</span></li>
+                <li class="classified-item"><strong>FRONTEND UX</strong> <span>10/10</span></li>
+                <li class="classified-item"><strong>AUTOMATION</strong> <span>10/10</span></li>
+              </ul>
+            </div>
+
+            <div class="ad-box">
+              <h4>LOOKING FOR A CUSTOM STACK?</h4>
+              <p>I can architect a bespoke set of tools tailored to your specific business requirements.</p>
+              <a href="#contact" class="btn-print" style="margin-top: 1rem; display: inline-block;">CONSULT THE ARCHITECT</a>
+            </div>
+          </aside>
+
+          <!-- Marquee moved inside Tools Page -->
+          <div class="span-12" style="margin-top: 4rem;">
+            <div class="marquee">
+              <div class="marquee-track">
+                <span>React.js</span><span class="marquee-dot">•</span>
+                <span>Node.js</span><span class="marquee-dot">•</span>
+                <span>MongoDB</span><span class="marquee-dot">•</span>
+                <span>Figma</span><span class="marquee-dot">•</span>
+                <span>GoHighLevel</span><span class="marquee-dot">•</span>
+                <span>Automation</span><span class="marquee-dot">•</span>
+                <span>UI UX Design</span><span class="marquee-dot">•</span>
+              </div>
+            </div>
+          </div>
+
+        </main>
+      </div>
+    </section>
+
+    <!-- ====== FAQ ====== -->
+    <section class="faq section" id="faq">
+      <div class="container-12">
+        <main class="front-page-grid span-12">
+          
+          <header class="masthead span-12" style="border-bottom: none; margin-bottom:0;">
+             <h2 class="masthead-title" style="font-size: clamp(2.5rem, 8vw, 6rem); text-align:left;">The Editorial Desk</h2>
+             <div class="masthead-bottom" style="margin-bottom: 2rem;">
+               <span>FREQUENTLY ASKED</span>
+               <span>LOGISTICS & PRICING</span>
+               <span>LETTERS TO THE EDITOR</span>
+             </div>
+          </header>
+
+          <article class="span-7" style="border-top: 2px solid var(--text-strong); padding-top: 2rem; border-right: 1px solid var(--text-strong); padding-right: 2rem;">
+            <h3 class="section-label">Q&A ARCHIVE</h3>
+            <div class="faq-item" style="border-top: none;">
+              <button class="faq-trigger"><span>How do I secure a project slot?</span><i class="ri-add-line faq-icon"></i></button>
+              <div class="faq-answer"><p>Submit a formal inquiry through the contact page. I personally review every proposal and schedule a discovery call for projects that align with my expertise.</p></div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-trigger"><span>Do you offer fixed-price packages?</span><i class="ri-add-line faq-icon"></i></button>
+              <div class="faq-answer"><p>I offer value-based pricing tailored to the complexity and impact of the system. Every project is unique and deserves a bespoke investment strategy.</p></div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-trigger"><span>Can you migrate legacy systems?</span><i class="ri-add-line faq-icon"></i></button>
+              <div class="faq-answer"><p>Yes. I specialize in modernizing outdated architectures, transitioning legacy codebases into high-performance MERN stack applications with zero downtime.</p></div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-trigger"><span>What is your typical turnaround?</span><i class="ri-add-line faq-icon"></i></button>
+              <div class="faq-answer"><p>Funnel systems can be deployed in 48-72 hours. Full-cycle application development typically ranges from 3 to 6 weeks depending on scope.</p></div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-trigger"><span>Do you work with international teams?</span><i class="ri-add-line faq-icon"></i></button>
+              <div class="faq-answer"><p>Absolutely. I have worked with founders across the US, UK, and Australia, maintaining clear communication across all time zones.</p></div>
+            </div>
+
+            <div class="ad-box" style="text-align: left; background: transparent; border-style: dashed;">
+              <h3 class="section-label" style="border: none; padding: 0;">OFFICE HOURS</h3>
+              <p>Mondays through Fridays: 09:00 - 18:00 (PHT). Response times for inquiries are typically under 12 hours.</p>
+            </div>
+          </article>
+
+          <aside class="span-5" style="padding-left: 2rem;">
+            <h3 class="section-label">THE EDITOR'S TOOLS</h3>
+            <img src="./assets/images/faq_typewriter.png" alt="Editorial Desk" class="editorial-img">
+            
+            <h3 class="section-label" style="margin-top: 1.5rem;">DIRECT INQUIRIES</h3>
+            <div class="faq-contact-cards" style="margin-top: 1rem;">
+              <a href="mailto:gabrielramores05@gmail.com" class="faq-pill">
+                <i class="ri-mail-line"></i>
+                <div><strong>CORRESPONDENCE</strong><span>gabrielramores05@gmail.com</span></div>
+              </a>
+              <a href="tel:09073469047" class="faq-pill">
+                <i class="ri-phone-line"></i>
+                <div><strong>DIRECT WIRE</strong><span>+63 907 346 9047</span></div>
+              </a>
+            </div>
+
+            <h3 class="section-label" style="margin-top: 2.5rem;">LETTERS TO THE EDITOR</h3>
+            <p style="font-size: 0.85rem; line-height: 1.5; font-style: italic; border-left: 3px solid var(--text-strong); padding-left: 1rem; margin-top: 1rem;">"Working with Gabriel was a breath of fresh air. He doesn't just say yes to every request; he challenges our assumptions to build a better product."<br><span style="font-style: normal; font-weight: 700; font-size: 0.7rem;">— MARCUS T., CTO</span></p>
+            
+            <p style="font-size: 0.85rem; line-height: 1.5; font-style: italic; border-left: 3px solid var(--text-strong); padding-left: 1rem; margin-top: 1.5rem;">"His attention to detail in the editorial design phase translated perfectly into the final React build. A rare talent."<br><span style="font-style: normal; font-weight: 700; font-size: 0.7rem;">— SARAH J., FOUNDER</span></p>
+
+            <div class="ad-box">
+              <h4>HAVE A SPECIFIC QUESTION?</h4>
+              <p>Don't see your question here? Send a direct message and I'll get back to you personally.</p>
+              <a href="#contact" class="btn-print" style="margin-top: 1rem; display: inline-block;">CONTACT THE DESK</a>
+            </div>
+          </aside>
+
+        </main>
+      </div>
+    </section>
+
+    <!-- ====== CONTACT ====== -->
+    <section class="contact section" id="contact">
+      <div class="container-12">
+        <main class="front-page-grid span-12">
+          
+          <header class="masthead span-12" style="border-bottom: none; margin-bottom:0;">
+             <h2 class="masthead-title" style="font-size: clamp(2.5rem, 8vw, 6rem); text-align:left;">Let's Talk</h2>
+             <div class="masthead-bottom" style="margin-bottom: 2rem;">
+               <span>NEW COMMISSIONS</span>
+               <span>SYSTEM AUDITS</span>
+             </div>
+          </header>
+
+          <div class="span-12" style="border-top: 1px solid var(--text-strong); padding-top: 2rem;">
+            <!-- Tab Switcher -->
+            <div class="contact-tabs">
+              <button class="contact-tab active" data-tab="meeting">Book a Meeting</button>
+              <button class="contact-tab" data-tab="form">Contact Now</button>
+            </div>
+
+            <!-- Tab: Book a Meeting -->
+            <div class="contact-tab-content active" id="tab-meeting">
+              <div class="meeting-card">
+                <div class="meeting-info">
+                  <img loading="lazy" src="./assets/images/profile1.webp" alt="Gabriel B. Ramores" class="meeting-avatar" width="80" height="80">
+                  <h3>Gabriel B. Ramores</h3>
+                  <p>Full Stack Developer & UI/UX Designer</p>
+                </div>
+                <div class="meeting-details">
+                  <a href="mailto:gabrielramores05@gmail.com" class="meeting-link">
+                    <i class="ri-mail-line"></i>
+                    <div><strong>Email</strong><span>gabrielramores05@gmail.com</span></div>
+                  </a>
+                  <a href="tel:09073469047" class="meeting-link">
+                    <i class="ri-phone-line"></i>
+                    <div><strong>Phone</strong><span>09073469047</span></div>
+                  </a>
+                  <a href="https://www.linkedin.com/in/gabriel-ramores" target="_blank" class="meeting-link">
+                    <i class="ri-linkedin-box-line"></i>
+                    <div><strong>LinkedIn</strong><span>Connect with me</span></div>
+                  </a>
+                </div>
+                <a href="assets/pdf/05_GabrielRamores_UI_UX_Resume_i_042126.pdf" target="_blank" download class="btn-print" style="margin-top:1rem; display: inline-block; width: 100%;">Download Resume</a>
+              </div>
+            </div>
+
+            <!-- Tab: Contact Form -->
+            <div class="contact-tab-content" id="tab-form">
+              <form class="contact-form" id="contact-form">
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="contact-firstname">First name*</label>
+                    <input type="text" name="first_name" id="contact-firstname" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="contact-lastname">Last name*</label>
+                    <input type="text" name="last_name" id="contact-lastname" required>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="contact-email">Email*</label>
+                    <input type="email" name="email" id="contact-email" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="contact-phone">Phone number</label>
+                    <input type="tel" name="phone" id="contact-phone">
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="contact-service">Service needed*</label>
+                    <select name="service" id="contact-service">
+                      <option value="">Select a service</option>
+                      <option value="Full Stack Development">Full Stack Development</option>
+                      <option value="UI/UX Design">UI/UX Design</option>
+                      <option value="Funnel Systems">Funnel & Automation Systems</option>
+                      <option value="Other">Other</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="contact-company">Company name</label>
+                    <input type="text" name="company" id="contact-company">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="contact-website">Company website URL</label>
+                  <input type="url" name="website" id="contact-website" placeholder="https://">
+                </div>
+                <div class="form-group">
+                  <label for="contact-message">Additional Information</label>
+                  <textarea name="message" id="contact-message" rows="4"></textarea>
+                </div>
+                <button type="submit" class="btn-primary">Submit now</button>
+                <p class="form-message" id="message"></p>
+              </form>
+            </div>
+          </div>
+        </main>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="footer">
+    <div class="container footer-layout">
+      <div class="footer-left">
+        <p class="footer-tagline">Building scalable systems that create real connections and lasting results.</p>
+        <div class="footer-contact-big">
+          <a href="tel:09073469047" class="footer-big-link">09073469047</a>
+          <a href="mailto:gabrielramores05@gmail.com" class="footer-big-link">gabrielramores05@gmail.com</a>
+        </div>
+      </div>
+      <div class="footer-right">
+        <div class="footer-nav">
+          <a href="#projects">Work</a>
+          <a href="#services">Services</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 All rights reserved by G.R.</p>
+      </div>
+    </div>
+  </footer>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
